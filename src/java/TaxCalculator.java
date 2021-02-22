@@ -31,14 +31,32 @@ public class TaxCalculator extends HttpServlet {
         //provide-the-response
         
             PrintWriter out=response.getWriter();
-        
-            out.print("Thanks For Visiting Us. ");
-            out.println("Your Income : "+income);
-            out.println("Your Tax    : "+tax);
-            out.println("Your Rebate : "+rebate);
-            out.println("Your Nettax : "+nettax);
-            out.println("Pay your taxes on time ...!!");
-            
+            out.println("<html>");
+            out.println("<body bgcolor=pink>");
+            out.println("<h3>Thanks For Visiting Us. </h3>");
+            out.println("<hr>");
+            out.println("<table border=1>");
+            out.println("<tr>");
+            out.println("<td>Income</td>");
+            out.println("<td>"+income+"</td>");
+            out.println("</tr>");
+            out.println("<tr>");
+            out.println("<td>Tax</td>");
+            out.println("<td>"+tax+"</td>");
+            out.println("</tr>");
+            out.println("<tr>");
+            out.println("<td>Rebate</td>");
+            out.println("<td>"+rebate+"</td>");
+            out.println("</tr>");
+            out.println("<tr>");
+            out.println("<td>NetTax</td>");
+            out.println("<td>"+nettax+"</td>");
+            out.println("</tr>");
+            out.println("</table>");
+            out.println("<hr>");
+            out.println("<marquee><h4>Pay your taxes on time ...!!</h4></marquee>");
+            out.println("</body>");
+            out.println("</html>");
             out.close();
         
     }
