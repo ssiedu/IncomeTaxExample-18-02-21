@@ -29,7 +29,8 @@ public class TaxCalculator extends HttpServlet {
             nettax=tax-rebate;
         
         //provide-the-response
-        
+            response.setContentType("text/html");
+            //response.setContentType("application/msword");
             PrintWriter out=response.getWriter();
             out.println("<html>");
             out.println("<body bgcolor=pink>");
