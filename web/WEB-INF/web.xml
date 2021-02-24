@@ -8,6 +8,10 @@
         <servlet-name>Info</servlet-name>
         <servlet-class>Info</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Guidelines</servlet-name>
+        <servlet-class>Guidelines</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>TaxCalculator</servlet-name>
         <url-pattern>/TaxCalculator</url-pattern>
@@ -15,6 +19,10 @@
     <servlet-mapping>
         <servlet-name>Info</servlet-name>
         <url-pattern>/Info</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Guidelines</servlet-name>
+        <url-pattern>/Guidelines</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
