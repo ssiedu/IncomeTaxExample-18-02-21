@@ -12,6 +12,18 @@
         <servlet-name>Guidelines</servlet-name>
         <servlet-class>Guidelines</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Addition</servlet-name>
+        <servlet-class>Addition</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Subtraction</servlet-name>
+        <servlet-class>Subtraction</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Calculator</servlet-name>
+        <servlet-class>Calculator</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>TaxCalculator</servlet-name>
         <url-pattern>/TaxCalculator</url-pattern>
@@ -23,6 +35,18 @@
     <servlet-mapping>
         <servlet-name>Guidelines</servlet-name>
         <url-pattern>/Guidelines</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Addition</servlet-name>
+        <url-pattern>/Addition</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Subtraction</servlet-name>
+        <url-pattern>/Subtraction</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Calculator</servlet-name>
+        <url-pattern>/Calculator</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

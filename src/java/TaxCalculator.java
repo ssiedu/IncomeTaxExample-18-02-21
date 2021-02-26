@@ -14,9 +14,16 @@ public class TaxCalculator extends HttpServlet {
             String s2=request.getParameter("t2");   //value of age
             String s[]=request.getParameterValues("ast");
             String s3=request.getParameter("c1");
-            
+            String s4=request.getParameter("r1");
+            String s5=request.getParameter("fb");
             
         //process-the-request
+            int profTax=0;
+            if(s4.equals("salary")){
+                profTax=5000;
+            }else{
+                profTax=2000;
+            }
             int nriTax=0;
             if(s3!=null){
                 nriTax=5000;
@@ -72,11 +79,16 @@ public class TaxCalculator extends HttpServlet {
             out.println("<td>NRITax</td>");
             out.println("<td>"+nriTax+"</td>");
             out.println("</tr>");
+            out.println("<tr>");
+            out.println("<td>Prof-Tax</td>");
+            out.println("<td>"+profTax+"</td>");
+            out.println("</tr>");
             out.println("</table>");
             out.println("<h5>Assets </h5>");
             for(String tmp:s){
                 out.println(tmp);
             }
+            out.println("Your Feedback : "+s5);
             out.println("<hr>");
             out.println("<marquee><h4>Pay your taxes on time ...!!</h4></marquee>");
             out.println("</body>");
